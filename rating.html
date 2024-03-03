@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Киномонстр Bootstrap</title>
+    <title>Рейтинг фильмов</title>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
   </head>
@@ -31,10 +31,10 @@
             </div>
             <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
               <ul class="nav nav-pills">
-                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="films.html">Фильмы</a></li>
                 <li><a href="#">Сериалы</a></li>
-                <li><a href="rating.html">Рейтинг фильмов</a></li>
+                <li class="active"><a href="#">Рейтинг фильмов</a></li>
                 <li><a href="#">Контакты</a></li>
               </ul>
             </div>
@@ -57,26 +57,52 @@
                 </div>
               </div>
             </form>
-            <h2>Новыe фильмы</h2>
+            <h1>Рейтинг фильмов</h1>
             <hr>
-            <div class="row">
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="./assets/img/inter.png" alt="Интерстеллар">
-                <div class="film_label">Интерстеллар</div>
-              </div>
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="./assets/img/matrix.png" alt="Матрица">
-                <div class="film_label">Матрица</div>
-              </div>
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="./assets/img/cloud.png" alt="Облачный атлас">
-                <div class="film_label">Облачный атлас</div>
-              </div>
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="./assets/img/max.png" alt="Безумный Макс">
-                <div class="film_label">Безумный Макс</div>
-              </div>
-            </div>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Фильм</th>
+                  <th class="text-center">Год</th>
+                  <th class="text-center">Рейтинг</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-lg-1 col-md-1 col-xs-2">
+                    <img class="img-responsive img-thumbnail" src="./assets/img/inter.png" alt="интерстеллар">
+                  </td>
+                  <td class="vert-align"><a href="show.html">Интерстеллар</a></td>
+                  <td class="vert-align text-center">2014</td>
+                  <td class="vert-align text-center"><span class="badge">8.1</span></td>
+                </tr>
+                <tr>
+                  <td class="col-lg-1 col-md-1 col-xs-2">
+                    <img class="img-responsive img-thumbnail" src="./assets/img/cloud.png" alt="Облачный атлас">
+                  </td>
+                  <td class="vert-align"><a href="#">Облачный атлас</a></td>
+                  <td class="vert-align text-center">2012</td>
+                  <td class="vert-align text-center"><span class="badge">8.0</span></td>
+                </tr>
+                <tr>
+                  <td class="col-lg-1 col-md-1 col-xs-2">
+                    <img class="img-responsive img-thumbnail" src="./assets/img/matrix.png" alt="Матрица">
+                  </td>
+                  <td class="vert-align"><a href="#">Матрица</a></td>
+                  <td class="vert-align text-center">1999</td>
+                  <td class="vert-align text-center"><span class="badge">7.9</span></td>
+                </tr>
+                <tr>
+                  <td class="col-lg-1 col-md-1 col-xs-2">
+                    <img class="img-responsive img-thumbnail" src="./assets/img/matrix.png" alt="Матрица">
+                  </td>
+                  <td class="vert-align"><a href="#">Безумный Макс</a></td>
+                  <td class="vert-align text-center">2015</td>
+                  <td class="vert-align text-center"><span class="badge">7.8</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="col-lg-3 col-lg-pull-9">
             <div class="panel panel-info hidden-xs">
@@ -153,22 +179,6 @@
             </div>
         </div>
         <div class="margin-8"></div>
-        <div  class="col-lg-9 col-lg-push-3">
-          <a href="#"><h3>Как снимали Интерстеллар</h3></a>
-          <hr>
-          <p>45 лет исполнилось Кристоферу Нолану — одному из самых успешных режиссеров нашего времени, чьи работы одинаково любимы как взыскательными критиками, так и простыми зрителями. Фильмом изначально занималась студия Paramount. Когда Кристофер Нолан занял место режиссера, студия Warner Bros., которая выпускала его последние фильмы, добилась участия в проекте.</p>
-          <a href="#" class="btn btn-warning pull-right">читать</a>
-        </div>  
-        <div class="margin-8"></div> 
-        <div  class="col-lg-9 col-lg-push-3">
-          <a href="#"><h3>Актер Том Хэнкс поделился впечателениями о фестивале</h3></a>
-          <hr>
-          <p>16 февраля в Лондоне состоялась 67-я церемония вручения наград Британской киноакадемии. Леонардо ДиКаприо, Брэд Питт, Анджелина Джоли, Кейт Бланшетт, Хелен Миррен, Эми Адамс, Кристиан Бэйл, Альфонсо Куарон и другие гости и победители премии — в нашем репортаже.</p>
-          <a href="#" class="btn btn-warning pull-right">читать</a>
-        </div>   
-        <div class="margin-8 clear"></div> 
-      </div>
-      <div class="clear"></div>
     </div>
 
     <footer>

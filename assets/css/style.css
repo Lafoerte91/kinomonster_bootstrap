@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 .header a, a:hover {
   color: #f0ad4e;
   text-decoration: none;
@@ -45,4 +49,33 @@
   .header {
     text-align: center;
   }
+}
+
+.clear {
+  clear: both;
+  height: 63px;
+}
+
+.wrapper {
+  min-height: 100px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  color: #666;
+  background-color: #222;
+  padding: 0 17px;
+  border-top: 1px solid #000;
+}
+
+footer a {
+  color: #999;
+}
+
+footer a:hover {
+  color: #efefef;
 }

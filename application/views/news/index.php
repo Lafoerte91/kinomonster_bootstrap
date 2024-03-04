@@ -1,4 +1,5 @@
 <h1>Все новости</h1>
-<?php foreach ($news as $key => $value) { ?>
-  <p><a href="view/<?= $value['slug']; ?>"><?= $value['title']; ?></a></p>
-<?php } ?>
+
+<?php foreach ($news as $key => $value): ?>
+	<p><a href="view/<?php echo $value['slug']; ?>"><?php echo $value['title']; ?></a></p>
+<?php endforeach ?>

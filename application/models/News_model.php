@@ -28,6 +28,22 @@ class News_model extends CI_Model {
 
 	}
 
+	public function updateNews($slug, $title, $text) {
+
+		$data = array(
+			'title' => $title,
+			'slug' => $slug, 
+			'text' => $text
+		);
+
+		return $this->db->update('news', $data, array('slug' => $slug));
+
+	}
+
+	public function deleteNews($slug) {
+		return $this->db->delete('news', array('slug' => $slug));
+	}
+
 
 
 }

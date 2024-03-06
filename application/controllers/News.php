@@ -35,6 +35,13 @@ class News extends MY_Controller {
 	}
 
 	public function create() {
+
+		if(!$this->dx_auth->is_admin()) {
+			show_404();
+			//$this->load->helper('url_helper');
+			//redirect('/', 'location');
+		}
+
 		$this->data['title'] = "добавить новость";
 
 		if($this->input->post('slug') && $this->input->post('title') && $this->input->post('text')) {
